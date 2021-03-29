@@ -1,0 +1,23 @@
+{% extends "main/main.html" %}
+{% load static %}
+
+{% block title %} Home {% endblock %}
+
+{% block content %}
+<div class="content-text">
+                <div class="content-text-title">
+                    Cryptocurrency Exchange
+                </div>
+                <div class="content-text-inner">
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et.
+                </div>
+                <a href="#" class="content-text-btn">Get Started</a>
+            </div>
+            <div class="content-img">
+                <img src="{% static "main/img/phone/iPhone X - Light.png" %}" class="content-img-bg">
+                <img src="{% static "main/img/phone/bubble_2.png" %}" class="bubble">
+                <img src="{% static "main/img/phone/camera_2.png" %}" class="camera ">
+                <img src="{% static "main/img/phone/chart_2.png" %}" class="chart2">
+                <img src="{% static "main/img/phone/chart_4.png" %}" class="chart4">
+            </div>
+{% endblock %}

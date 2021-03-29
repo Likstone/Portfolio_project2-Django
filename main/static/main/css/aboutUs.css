@@ -1,0 +1,25 @@
+.content {
+    justify-content: center;
+}
+.aboutUs {
+    color: white;
+    width: 100%;
+    max-width: 800px;
+    margin-top: 120px;
+}
+
+.aboutUs-title {
+    text-align: center;
+    font-size: 3rem;
+
+}
+.aboutUs-title span {
+    font-size: 3.5rem;
+    color: #43ED9C;
+
+}
+
+.aboutUs-text {
+    margin: 0 10px;
+    font-size: 1.3rem;
+}

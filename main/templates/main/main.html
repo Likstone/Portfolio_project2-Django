@@ -1,0 +1,55 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static "main/css/style.css" %}">
+    {% block stylesheet %}{% endblock %}
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+    <div class="wrapper">       
+        <header class="header">
+            <div class="header-logo">CRYPTO <span>ICO</span></div>
+            <div class="header-center-btn">                                
+                <a href="/" class="btn-header-link">Home</a>
+                <a href="price" class="btn-header-link">Price</a>
+                <a href="profile" class="btn-header-link">Profil</a>
+                <a href="about" class="btn-header-link">About Us</a>
+            </div>
+            <div class="nav">
+                <span id="trigger" class="trigger"><img src="{% static "main/img/ico/burger-icon.svg" %}">
+                    
+                </span>
+                <ul id="menu" class="menu">
+                    <li><a href="/" class="nav-link">Home</a></li>
+                    <li><a href="price" class="nav-link">Price</a></li>
+                    <li><a href="profile" class="nav-link">Profil</a></li>
+                    <li><a href="about" class="nav-link">About Us</a></li>
+                </ul>
+            </div>
+            <div class="header-login-btn">
+                <a href="login" class="btn-header-link-login">Login</a>
+                <a href="#" class="btn-Get-Started">Get Started</a>
+            </div>
+        </header>
+        <div class="content">
+            {% block content %}{% endblock %}
+        </div>
+        <footer class="footer">            
+            <div class="footer-logo bit">Bitcoin</div>
+            <div class="footer-logo eter">Ethereum</div>
+            <div class="footer-logo lifec">Litecoin</div>
+            <div class="footer-logo ripple">Ripple</div>
+            <div class="footer-logo dogec">Dogecoin</div>
+            <div class="footer-logo crypto">Crypto</div>         
+        </footer>
+    </div>  
+    <script src="{% static "main/js/srcipt.js" %}"></script>
+    
+</body>
+</html>

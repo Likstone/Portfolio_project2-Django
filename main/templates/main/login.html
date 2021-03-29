@@ -1,0 +1,30 @@
+{% extends "main/main.html" %}
+{% load static %}
+
+{% block title %} Login {% endblock %}
+
+{% block stylesheet %} <link rel="stylesheet" href="{% static "main/css/login.css" %}"> {% endblock %}
+
+{% block content %}
+    <div class="login-page">
+      <div class="input-page">
+            <div class="user-login">
+                <span>Login:</span>
+                <input class="input-login-field" name="login" placeholder="Login">
+            </div>
+            <div class="user-password">
+                <span>Password:</span>
+                <input class="input-login-field" name="password" placeholder="Password">
+            </div>
+      </div>
+        <div class="button-container">
+             <div class="reg-button">
+                <button name="registration" class="input-button reg-btn">Registration</button>
+            </div>
+            <div class="login-button">
+                <button name="login" class="input-button login-btn">Login</button>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
